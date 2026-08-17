@@ -1,0 +1,183 @@
+/* ============================================
+   БАЗОВЫЕ ПЕРЕМЕННЫЕ (используются по умолчанию)
+   ============================================ */
+:root {
+    --color-primary: #3B82F6;
+    --color-primary-light: #60A5FA;
+    --color-primary-dark: #2563EB;
+    --color-secondary: #10B981;
+    --color-secondary-light: #34D399;
+    --color-secondary-dark: #059669;
+    --color-background: #F5F7FA;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #1E293B;
+    --color-text-secondary: #64748B;
+    --color-text-muted: #94A3B8;
+    --color-border: #E2E8F0;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    --color-shadow-heavy: rgba(0, 0, 0, 0.15);
+    --color-glass-bg: rgba(255, 255, 255, 0.72);
+    --color-glass-border: rgba(255, 255, 255, 0.30);
+    --radius-card: 24px;
+    --radius-nav: 20px;
+    --radius-button: 16px;
+    --radius-small: 12px;
+    --radius-circle: 50%;
+    --font-family: 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+    --font-size-xs: 11px;
+    --font-size-sm: 13px;
+    --font-size-base: 15px;
+    --font-size-md: 17px;
+    --font-size-lg: 20px;
+    --font-size-xl: 26px;
+    --font-size-2xl: 34px;
+    --font-size-3xl: 42px;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --shadow-sm: 0 1px 3px var(--color-shadow);
+    --shadow-md: 0 4px 16px var(--color-shadow);
+    --shadow-lg: 0 8px 32px var(--color-shadow-heavy);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.06);
+    --nav-height: 72px;
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --transition-fast: 150ms ease;
+    --transition-medium: 300ms ease;
+    --transition-slow: 500ms ease;
+    --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ============================================
+   ТЕМА: СВЕТЛАЯ (по умолчанию)
+   ============================================ */
+html.theme-light {
+    --color-primary: #3B82F6;
+    --color-primary-light: #60A5FA;
+    --color-primary-dark: #2563EB;
+    --color-secondary: #10B981;
+    --color-secondary-light: #34D399;
+    --color-secondary-dark: #059669;
+    --color-background: #F5F7FA;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #1E293B;
+    --color-text-secondary: #64748B;
+    --color-text-muted: #94A3B8;
+    --color-border: #E2E8F0;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    --color-shadow-heavy: rgba(0, 0, 0, 0.15);
+    --color-glass-bg: rgba(255, 255, 255, 0.72);
+    --color-glass-border: rgba(255, 255, 255, 0.30);
+}
+
+/* ============================================
+   ТЕМА: ТЁМНАЯ
+   ============================================ */
+html.theme-dark {
+    --color-primary: #60A5FA;
+    --color-primary-light: #93C5FD;
+    --color-primary-dark: #3B82F6;
+    --color-secondary: #34D399;
+    --color-secondary-light: #6EE7B7;
+    --color-secondary-dark: #10B981;
+    --color-background: #5075ca;
+    --color-surface: #1E293B;
+    --color-text-primary: #F1F5F9;
+    --color-text-secondary: #94A3B8;
+    --color-text-muted: #64748B;
+    --color-border: #334155;
+    --color-shadow: rgba(0, 0, 0, 0.30);
+    --color-shadow-heavy: rgba(0, 0, 0, 0.50);
+    --color-glass-bg: rgba(30, 41, 59, 0.80);
+    --color-glass-border: rgba(255, 255, 255, 0.10);
+}
+
+/* ============================================
+   ТЕМА: ЗАКАТ (оранжево-розовый)
+   ============================================ */
+html.theme-sunset {
+    --color-primary: #960000;
+    --color-primary-light: #be0000;
+    --color-primary-dark: #b00000;
+    --color-secondary: #9a0000;
+    --color-secondary-light: #740000;
+    --color-secondary-dark: #DB2777;
+    --color-background: #ece9e6;
+    --color-surface: #960808;
+    --color-text-primary: #000000;
+    --color-text-secondary: #000000;
+    --color-text-muted: #C2410C;
+    --color-border: #804c09;
+    --color-shadow: rgba(228, 97, 4, 0.15);
+    --color-shadow-heavy: rgba(249, 115, 22, 0.25);
+    --color-glass-bg: rgba(255, 255, 255, 0.80);
+    --color-glass-border: rgba(249, 115, 22, 0.20);
+}
+
+/* ============================================
+   ТЕМА: РАССВЕТ (нежно-голубой с розовым)
+   ============================================ */
+html.theme-dawn {
+    --color-primary: #8B5CF6;
+    --color-primary-light: #A78BFA;
+    --color-primary-dark: #7C3AED;
+    --color-secondary: #F472B6;
+    --color-secondary-light: #F9A8D4;
+    --color-secondary-dark: #EC4899;
+    --color-background: #F5F3FF;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #2E1065;
+    --color-text-secondary: #5B21B6;
+    --color-text-muted: #8B5CF6;
+    --color-border: #EDE9FE;
+    --color-shadow: rgba(139, 92, 246, 0.15);
+    --color-shadow-heavy: rgba(139, 92, 246, 0.25);
+    --color-glass-bg: rgba(255, 255, 255, 0.80);
+    --color-glass-border: rgba(139, 92, 246, 0.20);
+}
+
+/* ============================================
+   ТЕМА: ПОЛЕ (зелёно-жёлтый)
+   ============================================ */
+html.theme-field {
+    --color-primary: #22C55E;
+    --color-primary-light: #4ADE80;
+    --color-primary-dark: #16A34A;
+    --color-secondary: #EAB308;
+    --color-secondary-light: #FACC15;
+    --color-secondary-dark: #CA8A04;
+    --color-background: #F0FDF4;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #14532D;
+    --color-text-secondary: #15803D;
+    --color-text-muted: #22C55E;
+    --color-border: #DCFCE7;
+    --color-shadow: rgba(34, 197, 94, 0.15);
+    --color-shadow-heavy: rgba(34, 197, 94, 0.25);
+    --color-glass-bg: rgba(255, 255, 255, 0.80);
+    --color-glass-border: rgba(34, 197, 94, 0.20);
+}
+
+/* ============================================
+   ТЕМА: ГОРЫ (сине-серый)
+   ============================================ */
+html.theme-mountain {
+    --color-primary: #3B82F6;
+    --color-primary-light: #60A5FA;
+    --color-primary-dark: #2563EB;
+    --color-secondary: #64748B;
+    --color-secondary-light: #94A3B8;
+    --color-secondary-dark: #475569;
+    --color-background: #F1F5F9;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #0F172A;
+    --color-text-secondary: #334155;
+    --color-text-muted: #64748B;
+    --color-border: #CBD5E1;
+    --color-shadow: rgba(59, 130, 246, 0.10);
+    --color-shadow-heavy: rgba(59, 130, 246, 0.20);
+    --color-glass-bg: rgba(255, 255, 255, 0.80);
+    --color-glass-border: rgba(59, 130, 246, 0.15);
+}
